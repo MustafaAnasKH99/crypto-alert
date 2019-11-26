@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { Client } from 'coinbase'
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const XLM = (props) => {
@@ -29,7 +29,7 @@ const XLM = (props) => {
   } else if (xlm >= expected_sell_xlm){
     toast('SELL XLM NOW 🚀')
   }
-
+  toast('SELL XLM NOW 🚀')
     return (
         <span>
             XLM is: <code>{xlm}</code> 
