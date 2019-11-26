@@ -29,7 +29,7 @@ const XLM = (props) => {
   } else if (xlm >= expected_sell_xlm){
     toast('SELL XLM NOW 🚀')
   }
-  toast('SELL XLM NOW 🚀')
+
     return (
         <span>
             XLM is: <code>{xlm}</code> 
