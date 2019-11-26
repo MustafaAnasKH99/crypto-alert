@@ -3,38 +3,38 @@ import { Client } from 'coinbase'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const LTC = (props) => {
+const XLM = (props) => {
   const { API_KEY, API_SECRET, audio } = props
   const client = new Client({'apiKey': API_KEY, 'apiSecret': API_SECRET, strictSSL: false});
   
-  const [ltc, setLTC] = useState('')
+  const [xlm, setXLM] = useState('')
 
-  let expected_buy_ltc = 55;
-  let expected_sell_ltc = 75;
+  let expected_sell_xlm = 0.09;
+  let expected_buy_xlm = 0.07;
 
   setInterval(() => {
-    client.getBuyPrice({'currencyPair': 'LTC-CAD'},  (err, obj) => {
+    client.getBuyPrice({'currencyPair': 'XLM-CAD'},  (err, obj) => {
       if(err) console.log(err)
       if(obj != null){
-        setLTC(obj.data.amount)
+        setXLM(obj.data.amount)
       } 
     });
   }, 3000)
 
-  if(ltc <= expected_buy_ltc){
-    if(ltc !== ''){
+  if(xlm <= expected_buy_xlm){
+    if(xlm !== ''){
       audio.play()
-      toast('Buy LTC NOW')
+      toast('Buy XLM NOW 🚀')
     } 
-  } else if (ltc >= expected_sell_ltc){
-    toast('SELL LTC NOW 🚀')
+  } else if (xlm >= expected_sell_xlm){
+    toast('SELL XLM NOW 🚀')
   }
 
     return (
         <span>
-          LTC is: <code>{ltc}</code> 
+            XLM is: <code>{xlm}</code> 
         </span>
      );
 }
  
-export default LTC;
+export default XLM;

@@ -11,6 +11,7 @@ import data from './secret.js';
 import soundFile from './assets/notification.mp3' 
 
 import LTC from './LTC'
+import XLM from './XLM'
 
 function App() {
   const { API_KEY, API_SECRET } = data
@@ -22,7 +23,11 @@ function App() {
       <ToastContainer />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <LTC audio={audio} API_KEY={API_KEY} API_SECRET={API_SECRET} />
+        <p>
+          <LTC audio={audio} API_KEY={API_KEY} API_SECRET={API_SECRET} />
+          <br />
+          <XLM audio={audio} API_KEY={API_KEY} API_SECRET={API_SECRET} />
+        </p>
       </header>
     </div>
   );
