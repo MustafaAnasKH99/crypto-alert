@@ -5,7 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 import logo from './logo.svg';
-import './App.css';
+import './App.css'; 
 import data from './secret.js';
 import soundFile from './assets/notification.mp3' 
 
@@ -24,6 +24,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           <LTC audio={audio} API_KEY={API_KEY} API_SECRET={API_SECRET} />
+          <br />
           <br />
           <XLM audio={audio} API_KEY={API_KEY} API_SECRET={API_SECRET} />
         </p>
