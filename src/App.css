@@ -20,3 +20,32 @@
 .App-link {
   color: #09d3ac;
 }
+
+.grid-container{
+  display: grid;
+  grid-column-gap: 150px;
+  grid-row-gap: 30px;
+  grid-template-columns: auto auto;
+}
+
+.item-1{
+  display: grid;
+}
+.item-2{
+  display: grid;
+}
+
+.grid-item{
+  background-color: rgba(24, 17, 75, .3);
+  border-radius: 3px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+p{
+  text-align: start;
+}
+
+strong{
+  color: rgba(26, 73, 150, 1);
+}

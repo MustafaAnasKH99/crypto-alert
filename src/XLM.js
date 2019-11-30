@@ -41,12 +41,12 @@ const XLM = (props) => {
   }) 
 
     return (
-        <span>
+        <p>
             XLM is: <code>{xlm}</code>
             <br />
-            <strong>Mean</strong> 
-            XLM: <code>{ Number((final_mean / mean_xlm.length).toFixed(4)) }</code>
-        </span>
+            <strong>Mean </strong> 
+            XLM:  <code>{ Number((final_mean / mean_xlm.length).toFixed(4)) }</code>
+        </p>
      );
 }
  

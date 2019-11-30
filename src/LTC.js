@@ -41,12 +41,12 @@ const LTC = (props) => {
   }) 
 
     return (
-        <span>
+        <p>
           LTC is: <code>{ltc}</code>
           <br />
-          <strong>Mean</strong> 
-          LTC: <code>{ Number((final_mean / mean_ltc.length).toFixed(2)) }</code>
-        </span>
+          <strong>Mean </strong> 
+          LTC:<code>    { Number((final_mean / mean_ltc.length).toFixed(2)) }</code>
+        </p>
      );
 }
  

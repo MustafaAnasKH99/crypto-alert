@@ -22,12 +22,14 @@ function App() {
       <ToastContainer />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          <LTC audio={audio} API_KEY={API_KEY} API_SECRET={API_SECRET} />
-          <br />
-          <br />
-          <XLM audio={audio} API_KEY={API_KEY} API_SECRET={API_SECRET} />
-        </p>
+        <div className="body grid-container">
+          <div className="grid-item item-1">
+              <LTC audio={audio} API_KEY={API_KEY} API_SECRET={API_SECRET} />
+          </div>
+          <div className="grid-item item-2">
+              <XLM audio={audio} API_KEY={API_KEY} API_SECRET={API_SECRET} />
+          </div>
+        </div>
       </header>
     </div>
   );
